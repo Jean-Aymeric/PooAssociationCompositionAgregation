@@ -1,13 +1,13 @@
-from foo import Foo
+import typing
 
 
 class Corge:
-    __foo: Foo
+    __foo: typing.Any
 
-    def __init__(self, foo: Foo):
+    def __init__(self, foo):
         self.__foo = foo
 
-    def setFoo(self, foo: Foo):
+    def setFoo(self, foo):
         self.__foo = foo
         if self.__foo.getCorge() != self:
             self.__foo.setCorge(self)

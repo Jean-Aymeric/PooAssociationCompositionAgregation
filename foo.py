@@ -3,6 +3,7 @@ from baz import Baz
 from qux import Qux
 from corge import Corge
 
+
 class Foo:
     __bar: Bar
     __bazs: [Baz]
